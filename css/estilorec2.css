@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #ceb97c;
+}
+
+.encabezado,
+.pie {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.contenido {
+	margin: 20px auto;
+	width: 95%;
+}
+
+input {
+	padding: 4px 8px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+	text-decoration: none;
+	font-weight: 700;
+	padding: 5px 8px;
+	background-color: #663333;
+	color: white;
+	cursor: pointer;
+}
+
+.encabezado {
+	background-color: #208033;
+	color: white;
+}
+
+.pie {
+	background-color: #208033;
+	color: white;
+}

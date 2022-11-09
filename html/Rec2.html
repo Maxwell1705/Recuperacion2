@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Recuperacion Corte 2</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/mainrec2.js"></script>
+	<link rel="stylesheet" href="/css/estilorec2.css">
+	<title>Examen Recuperación Corte 2</title>
+
 </head>
+
 <body>
-    
+	<div class="encabezado">
+		Indice de masa corporal en la
+		poblacion adulta</div>
+
+	<section class="contenido">
+		<div class="formulario">
+			<label>Edad</label>
+			<input type="text" id="edad" placeholder="Edad">
+			<label>Altura</label>
+			<input type="text" id="altura" placeholder="Altura">
+			<label>Peso</label>
+			<input type="text" id="peso" placeholder="Peso">
+			<label>IMC</label>
+			<input type="text" id="imc" placeholder="IMC" readonly>
+			<label>Nivel</label>
+			<input type="text" id="nivel" placeholder="Nivel" readonly>
+			<button class="button" id="btnGenerar">Generar</button>
+			<button class="button" id="btnCalcular">Calcular</button>
+			<button class="button" id="btnRegistrar">Registrar</button>
+		</div>
+
+		<div class="registros">
+			<h3>Registros</h3>
+			<center>
+				<table border="1">
+					<thead>
+						<tr>
+							<th width="50">Num</th>
+							<th width="50">Edad</th>
+							<th width="100">Altura</th>
+							<th width="100">Peso</th>
+							<th width="50">IMC</th>
+							<th width="200">Nivel</th>
+						</tr>
+					</thead>
+					<tbody id="registros"></tbody>
+				</table>
+			</center>
+		</div>
+
+		<center>
+			<div class="resultados" style="margin-top: 50px;">
+				<label>IMC Promedio</label>
+				<span id="promedioIMC"></span>
+				<button class="button" id="btnBorrarRegistro" style="display: block; margin-top: 50px;">Borrar
+					Registro</button>
+			</div>
+		</center>
+	</section>
+
+	<div class="pie">Derechos reservados _ Maximiliano Contreras Cepeda</div>
 </body>
+
 </html>
