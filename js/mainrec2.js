@@ -56,3 +56,9 @@ function registrar() {
 		<td>${document.getElementById("nivel").value}</td>
 	</tr>`;
 }
+function borrarRegistro() {
+	registros.innerHTML = "";
+	document.getElementById("promedioIMC").innerText = "";
+	imcTotal = 0;
+	numRegistros = 0;
+}
