@@ -26,3 +26,33 @@ function calcular() {
 
 	document.getElementById("imc").value = imc.toFixed(2);
 }
+function registrar() {
+	if ( document.getElementById("edad").value === "" || document.getElementById("altura").value === "" || document.getElementById("peso").value === "" ) {
+		return alert("Presione el boton de generar");
+	}
+
+	if (document.getElementById("imc").value === "" || document.getElementById("nivel").value === "") {
+		return alert("Presione el boton de calcular");
+	}
+	
+	var imcConvertido = parseFloat(document.getElementById("imc").value);
+
+	if (isNaN(imcConvertido)) {
+		return alert("IMC invalido");
+	}
+	
+	numRegistros += 1;
+	imcTotal += imcConvertido;
+
+
+	document.getElementById("promedioIMC").innerText = (imcTotal / numRegistros).toFixed(2);
+
+	registros.innerHTML += `<tr>
+		<td>${numRegistros}</td>
+		<td>${document.getElementById("edad").value}</td>
+		<td>${document.getElementById("altura").value}</td>
+		<td>${document.getElementById("peso").value}</td>
+		<td>${document.getElementById("imc").value}</td>
+		<td>${document.getElementById("nivel").value}</td>
+	</tr>`;
+}
